@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+	function blackjack(){
+		var url="http://localhost:8080/blackjack";
+		
+		$.ajax({
+			type: "GET",
+			url: url,
+			contentType: "application/json; charst=utf-8",
+			dataType: "html",
+			success: function(msg){
+				$('#content').html(msg);
+			}
+		});
+	}
+</script>
+</head>
+<body onload="blackjack()">
+	<div id='content'/>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<div>
+	<script src="Card.js"></script>
+	<script src="DisplayedCard.js"></script>
+	<script src="prototype.js"></script>
+	<script src="scriptaculous.js"></script>
+	<script src="effects.js"></script>
+	<script src="blackjack.js"></script>
+	<table align=center cellpadding=0 cellspacing=10 border=0;>
+		<tr>
+			<td>
+				<div style="position: relative; border: thick solid #660; background-color: #fff; width: 579px; height:500px">
+					<div style="position: absolute; left:20px; top:15px; color:#9F9; font-size:large">Dealer's cards:</div>
+					<div id="dealer1" style="position: absolute; left: 50px; top:50px;  border: 2px solid #660; background-color: #660"></div>
+					<div id="dealer2" style="position: absolute; left: 150px; top:50px;  border: 2px solid #660; background-color: #660"></div>
+					<div id="dealer3" style="position: absolute; left: 250px; top:50px;  border: 2px solid #660; background-color: #660"></div>
+					<div id="dealer4" style="position: absolute; left: 350px; top:50px;  border: 2px solid #660; background-color: #660"></div>
+					<div id="dealer5" style="position: absolute; left: 450px; top:50px;  border: 2px solid #660; background-color: #660"></div>
+					<div style="position: absolute; left:20px; top:210px; color:#9F9; font-size:large">Your cards:</div>
+					<div id="player1" style="position: absolute; left: 50px; top:250px;  border: 2px solid #660; background-color: #660"></div>
+					<div id="player2" style="position: absolute; left: 150px; top:250px;  border: 2px solid #660; background-color: #660"></div>
+					<div id="player3" style="position: absolute; left: 250px; top:250px;  border: 2px solid #660; background-color: #660"></div>
+					<div id="player4" style="position: absolute; left: 350px; top:250px;  border: 2px solid #660; background-color: #660"></div>
+					<div id="player5" style="position: absolute; left: 450px; top:250px;  border: 2px solid #660; background-color: #660"></div>
+					<div style="position: absolute; left:20px; top: 410px; color:#9F9; font-size:large">You have:</div>
+					<div id="money" style="position: absolute; left: 70px; top:445px; color:yellow; font-size:x-large"></div>
+					<div id="betdiv" style="position:absolute; left:300px; top:425px">
+					   <span style="color:#9F9">Your bet:</span>&nbsp; <input type=text size=6 id="bet">
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td align=center>
+				<input type=button id="hitButton" value="Hit" onclick="hit()" disabled>
+				<input type=button id="standButton" value="Stand" onclick="stand()" disabled>
+				<input type=button id="newGameButton" value="New Game" onClick="startGame()">
+			</td>
+			</tr>
+			<tr>
+			<td align=center>
+				<span id="message" style="color:#600; font-weight:bold">Welcome to Blackjack!<br>Click "New Game" to Begin.</span>
+			</td>
+		</tr>
+	</table>
+</div>
